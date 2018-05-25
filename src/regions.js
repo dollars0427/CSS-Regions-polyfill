@@ -336,8 +336,6 @@ function splitRegion(index) {
 
  var nextRegion = this._regions[index+1];
 
- currentRegion.style.position = 'relative';
-
  var height = currentRegion.offsetHeight - parseInt(computedStyle(currentRegion, 'padding-bottom'), 10);
  var section = splitElements(currentRegion, currentRegion, height, [], index);
 
